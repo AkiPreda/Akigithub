@@ -1,0 +1,25 @@
+<%= form_for(@aki) do |f| %>
+  <% if @aki.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aki.errors.count, "error") %> prohibited this aki from being saved:</h2>
+
+      <ul>
+      <% @aki.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

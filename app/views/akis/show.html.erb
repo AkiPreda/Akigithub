@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @aki.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @aki.body %>
+</p>
+
+<%= link_to 'Edit', edit_aki_path(@aki) %> |
+<%= link_to 'Back', akis_path %>

@@ -1,0 +1,2 @@
+module AkisHelper
+end
